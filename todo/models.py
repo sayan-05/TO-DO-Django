@@ -5,6 +5,6 @@ from django.utils import timezone
 
 
 class TodoList(models.Model):
-    title = models.CharField(max_length=20)
+    title = models.CharField(max_length=10)
     content = models.TextField()
     time = models.DateTimeField(default=timezone.now)
